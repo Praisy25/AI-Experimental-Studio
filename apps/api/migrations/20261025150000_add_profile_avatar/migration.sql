@@ -1,0 +1,2 @@
+ALTER TABLE "User" ADD COLUMN "avatarData" BYTEA;
+ALTER TABLE "User" ADD COLUMN "avatarMimeType" TEXT;

@@ -1,0 +1,5 @@
+-- Add inference settings to each experiment run.
+ALTER TABLE "ExperimentRun"
+ADD COLUMN "temperature" DOUBLE PRECISION NOT NULL DEFAULT 0.7,
+ADD COLUMN "topP" DOUBLE PRECISION NOT NULL DEFAULT 0.9,
+ADD COLUMN "maxTokens" INTEGER NOT NULL DEFAULT 256;
